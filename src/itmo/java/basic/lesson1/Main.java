@@ -1,4 +1,4 @@
-package itmo.java.basics.lesson1;
+package itmo.java.basic.lesson1;
 
 import java.util.Scanner;
 
