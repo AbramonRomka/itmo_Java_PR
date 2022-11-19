@@ -11,7 +11,7 @@ public class Main {
         System.out.println("Java");
 
         //Задача 2
-        System.out.println((46 + 10) * (10 / 3));
+        System.out.println((46 + 10) * (10 / 3d));
         System.out.println(29 * 4 * (-15));
 
         //Задача 3
