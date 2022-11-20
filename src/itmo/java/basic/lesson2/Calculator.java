@@ -1,32 +1,62 @@
 package itmo.java.basic.lesson2;
 
 public class Calculator {
+    public static void main(String[] args){
+        double a = 2.0;
+        double b = 3.4;
+        Calculator calc = new Calculator();
 
-    int addition() {
+        System.out.println(calc.multiplication(a,b));
     }
-    double addition() {
+    int addition(int a, int b) {
+        int c = a+b;
+        return c;
     }
-    long addition() {
+    double addition(double a, double b) {
+        double c = a+b;
+        return c;
     }
-
-    int subtraction() {
-    }
-    double subtraction() {
-    }
-    long subtraction() {
-    }
-
-    int division() {
-    }
-    double division() {
-    }
-    long division() {
+    long addition(long a, long b) {
+        long c = a+b;
+        return c;
     }
 
-    int multiplication() {
+    int subtraction(int a, int b) {
+        int c = a-b;
+        return c;
     }
-    double multiplication() {
+    double subtraction(double a, double b) {
+        double c = a-b;
+        return c;
     }
-    long multiplication() {
+    long subtraction(long a, long b) {
+        long c = a-b;
+        return c;
+    }
+
+    int division(int a, int b) {
+        int c = a/b;
+        return c;
+    }
+    double division(double a, double b) {
+        double c = a/b;
+        return c;
+    }
+    long division(long a, long b) {
+        long c = a/b;
+        return c;
+    }
+
+    int multiplication(int a, int b) {
+        int c = a*b;
+        return c;
+    }
+    double multiplication(double a, double b) {
+        double c = a*b;
+        return c;
+    }
+    long multiplication(long a, long b) {
+        long c = a*b;
+        return c;
     }
 }
