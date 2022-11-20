@@ -2,11 +2,11 @@ package itmo.java.basic.lesson2;
 
 public class Calculator {
     public static void main(String[] args){
-        double a = 2.0;
-        double b = 3.4;
+        int a = 2;
+        int b = 3;
         Calculator calc = new Calculator();
 
-        System.out.println(calc.multiplication(a,b));
+        System.out.println(calc.division(a,b));
     }
     int addition(int a, int b) {
         int c = a+b;
@@ -34,8 +34,8 @@ public class Calculator {
         return c;
     }
 
-    int division(int a, int b) {
-        int c = a/b;
+    double division(int a, int b) {
+        double c = (double) a/b;
         return c;
     }
     double division(double a, double b) {
