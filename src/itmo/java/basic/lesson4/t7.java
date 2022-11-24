@@ -5,10 +5,15 @@ package itmo.java.basic.lesson4;
 public class t7 {
     public static void main(String[] args) {
         int[] ints = new int[]{1, 2, 3, 5, 7, 8, 9, 90, 124, 536};
-        if(sort(ints)){
+        print(ints);
+    }
+    public static void print (int[] array){
+
+        if(sort(array)){
             System.out.println("OK");
         }
         else System.out.println("PLease,try again");
+
     }
 
     static boolean sort(int[] in) {

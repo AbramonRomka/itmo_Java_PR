@@ -5,22 +5,21 @@ import java.util.Arrays;
 public class t10 {
     public static void main(String[] args) {
         int[] ints = new int[]{6, 8, 9, 122, 3, 6, 8, 8, 4, 21, 4, 23, 5, 21, 5, 6, 4, 3, 9};
-        System.out.println(Arrays.toString(ints));
-        sorted(ints);
-        System.out.println(Arrays.toString(ints));
-        for (int x = 0; x < ints.length - 1; x++) {
-//            System.out.println(x);
-//            System.out.println(x != ints[ints.length-2]);
+        print(sorted(ints));
+    }
+    public static void print(int[] sear){
+
+        for (int x = 0; x < sear.length - 1; x++) {
             if (x == 0) {
-                if (ints[x] != ints[x + 1]) {
-                    System.out.println(ints[x]);
+                if (sear[x] != sear[x + 1]) {
+                    System.out.println(sear[x]);
                     break;
                 } else continue;
-            } else if (ints[x] != ints[x - 1] && ints[x] != ints[x + 1]) {
-                System.out.println(ints[x]);
+            } else if (sear[x] != sear[x - 1] && sear[x] != sear[x + 1]) {
+                System.out.println(sear[x]);
                 break;
-            } else if (x == ints.length - 2 && ints[x] != ints[ints.length - 1]) {
-                System.out.println(ints[x + 1]);
+            } else if (x == sear.length - 2 && sear[x] != sear[sear.length - 1]) {
+                System.out.println(sear[x + 1]);
                 break;
             }
         }

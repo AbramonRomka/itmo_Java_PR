@@ -6,6 +6,9 @@ import java.util.Scanner;
 
 public class t8 {
     public static void main(String[] args) {
+        print(input());
+    }
+    public static int[] input(){
         Scanner console = new Scanner(System.in);
         System.out.print("Array lenght: ");
         int l = console.nextInt();
@@ -14,6 +17,9 @@ public class t8 {
         for(int i = 0; i<ints.length; i++){
             ints[i] = console.nextInt();
         }
-        System.out.print("Result: " + Arrays.toString(ints));
+        return ints;
+    }
+    public static void print(int [] array){
+        System.out.print("Result: " + Arrays.toString(array));
     }
 }

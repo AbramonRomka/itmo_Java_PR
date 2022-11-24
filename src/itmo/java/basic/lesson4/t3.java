@@ -6,6 +6,9 @@ import java.util.Scanner;
 public class t3 {
 
     public static void main(String[] args) {
+        System.out.println(task3());
+    }
+    public static boolean task3 (){
         Scanner console = new Scanner(System.in);
         System.out.print("Введите 1 число: ");
         int number1 = console.nextInt();
@@ -16,6 +19,7 @@ public class t3 {
         System.out.print("Введите 3 число: ");
         int number3 = console.nextInt();
         System.out.println(" ");
-        System.out.println((boolean) (number1 + number2 == number3));
+        return (boolean) (number1 + number2 == number3);
+
     }
 }

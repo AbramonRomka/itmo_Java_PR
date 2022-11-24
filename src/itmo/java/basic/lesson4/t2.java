@@ -3,6 +3,9 @@ package itmo.java.basic.lesson4;
 которые делятся на 3, 5 и на то и другое (то есть и на 3 и на 5).*/
 public class t2 {
     public static void main(String[] args) {
+        task2();
+    }
+    public static void task2(){
         System.out.print("Делится на 3:");
         for (int i = 0; i<101; i++){
             if(i%3 == 0) System.out.print(i + ", ");
