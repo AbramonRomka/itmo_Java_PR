@@ -1,5 +1,5 @@
 package itmo.java.basic.lesson4;
-
+/*Напишите метод, который меняет местами первый и последний элемент массива.*/
 import java.util.Arrays;
 
 public class t9 {

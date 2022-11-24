@@ -1,5 +1,5 @@
 package itmo.java.basic.lesson4;
-
+/*Напишите программу, чтобы проверить, что массив содержит число 1 или 3*/
 import javax.xml.stream.events.DTD;
 
 public class t6 {

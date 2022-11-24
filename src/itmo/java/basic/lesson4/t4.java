@@ -1,7 +1,7 @@
 package itmo.java.basic.lesson4;
-
+/*Напишите программу, которая принимает от пользователя три целых числа и возвращает true,
+если второе число больше первого числа, а третье число больше второго числа*/
 import java.util.Scanner;
-
 public class t4 {
     public static void main(String[] args) {
         Scanner console = new Scanner(System.in);

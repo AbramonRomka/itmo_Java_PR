@@ -1,7 +1,8 @@
 package itmo.java.basic.lesson4;
 
 import java.util.Scanner;
-
+/*Напишите программу, чтобы вычислить сумму двух целых чисел и вернуть true,
+если сумма равна третьему целому числу*/
 public class t3 {
 
     public static void main(String[] args) {

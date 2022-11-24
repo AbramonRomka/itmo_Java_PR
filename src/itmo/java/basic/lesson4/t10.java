@@ -1,5 +1,5 @@
 package itmo.java.basic.lesson4;
-
+/*Дан массив чисел. Найдите первое уникальное в этом массиве число*/
 import java.util.Arrays;
 
 public class t10 {
