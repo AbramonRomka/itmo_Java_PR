@@ -2,27 +2,24 @@ package itmo.java.basic.lesson5;
 
 public class t1 {
     public static void main(String[] args) {
-        String longText = "Существуют две основные трактовки понятия «текст»: имманентная (расширенная, философски нагруженная) и репрезентативная (более частная). Имманентный подход подразумевает отношение к тексту как к автономной реальности, нацеленность на выявление его внутренней структуры. Репрезентативный — рассмотрение текста как особой формы представления информации о внешней тексту действительности.";
-        print(trMethod(longText));
+        String longText = "Существуют две основные трактовки понятия «текст»: сущность как (расширенная, философски нагруженная) и репрезентативная (более частная). Имманентный подход подразумевает отношение к тексту как к автономной реальности, нацеленность на выявление его внутренней структуры. Репрезентативный — рассмотрение текста как особой формы представления информации о внешней тексту действительности.";
+        trMethod(longText);
+        System.out.print("Слово: ");
+        System.out.println(trMethod(longText));
+        System.out.print("Длинна слова: ");
+        System.out.println(trMethod(longText).length());
     }
 
     public static String trMethod(String lt) {
-        String[] arrayText = lt.split("[., ()]");
+        String[] arrayText = lt.replaceAll("[^а-я^А-Я ^a-z^A-Z ]", "").split(" ");
         int l = 0;
         String str = null;
         for (String s : arrayText) {
             if (l <= s.length()) {
+                l = s.length();
                 str = s;
             }
         }
         return str;
-    }
-
-    public static void print(String word) {
-
-        System.out.print("Слово: ");
-        System.out.println(word);
-        System.out.print("Длинна слова: ");
-        System.out.println(word.length());
     }
 }
