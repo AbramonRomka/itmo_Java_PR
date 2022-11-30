@@ -12,7 +12,7 @@ public class t2 {
     public static boolean reverse(String word) {
         StringBuilder wordBuilder = new StringBuilder(word);
         String wordRev = String.valueOf(wordBuilder.reverse());
-        return word.equals(wordRev);
+        return word.equalsIgnoreCase(wordRev);
     }
 
     public static String word() {
