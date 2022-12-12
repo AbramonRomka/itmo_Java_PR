@@ -19,7 +19,7 @@ class Stream extends Thread {
 
 class StreamStarter {
     public static void main(String[] args) {
-        int amount = 11; //количество необходимых потоков
+        int amount = 10; //количество необходимых потоков
         duringState(start(amount), amount);
     }
 
